@@ -1,0 +1,23 @@
+{
+  "name": "openjs-security-monitor",
+  "version": "1.0.0",
+  "description": "Monitors security aspects of top OpenJS npm packages",
+  "main": "monitor.js",
+  "scripts": {
+    "start": "node monitor.js",
+    "monitor": "node monitor.js"
+  },
+  "keywords": [
+    "security",
+    "monitor",
+    "openjs",
+    "nodejs",
+    "express",
+    "webpack"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  }
+}

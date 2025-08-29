@@ -1,0 +1,39 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+REPOSITORIES	monitor.js	/^const REPOSITORIES = [$/;"	A
+bestPractices	monitor.js	/^        bestPractices: bestPracticesResult,$/;"	P
+calculateChecksum	monitor.js	/^function calculateChecksum(content) {$/;"	F
+changed	monitor.js	/^        changed: false,$/;"	P
+changed	monitor.js	/^      changed: false,$/;"	P
+changed	monitor.js	/^      changed: hasChanged,$/;"	P
+checkGitHubSecurityPolicy	monitor.js	/^async function checkGitHubSecurityPolicy(repo) {$/;"	F
+checkSecurityBestPractices	monitor.js	/^async function checkSecurityBestPractices(repo) {$/;"	F
+data	monitor.js	/^      let data = '';$/;"	V
+downloads	monitor.js	/^            downloads: 0,$/;"	P
+downloads	monitor.js	/^          downloads: 0,$/;"	P
+downloads	monitor.js	/^        downloads: 0,$/;"	P
+ensureDirectoriesExist	monitor.js	/^async function ensureDirectoriesExist() {$/;"	F
+getNpmDownloadCount	monitor.js	/^async function getNpmDownloadCount(packageName) {$/;"	F
+getPreviousChecksum	monitor.js	/^async function getPreviousChecksum(owner, repo, filePath) {$/;"	F
+getRawFileContent	monitor.js	/^async function getRawFileContent(owner, repo, filePath, branch) {$/;"	F
+hasSecurityFile	monitor.js	/^        hasSecurityFile: false,$/;"	P
+hasSecurityFile	monitor.js	/^      hasSecurityFile: false,$/;"	P
+hasSecurityFile	monitor.js	/^      hasSecurityFile: true,$/;"	P
+hasSecurityFile	monitor.js	/^    hasSecurityFile: false,$/;"	P
+hasSecurityFile	monitor.js	/^async function hasSecurityFile(repo) {$/;"	F
+headers	monitor.js	/^    headers: {$/;"	P
+main	monitor.js	/^async function main() {$/;"	F
+monitorSecurityFile	monitor.js	/^async function monitorSecurityFile(repo) {$/;"	F
+npmStats	monitor.js	/^        npmStats: downloadStats$/;"	P
+options	monitor.js	/^  const options = {$/;"	O
+package	monitor.js	/^            package: actualPackage$/;"	P
+results	monitor.js	/^    const results = [];$/;"	A
+results	monitor.js	/^  const results = {$/;"	O
+saveChecksum	monitor.js	/^async function saveChecksum(owner, repo, filePath, checksum) {$/;"	F
+saveToCache	monitor.js	/^async function saveToCache(owner, repo, filePath, content) {$/;"	F
+securityPolicyInGitHub	monitor.js	/^    securityPolicyInGitHub: false,$/;"	P
+securityReport	monitor.js	/^    securityReport: {}$/;"	P
