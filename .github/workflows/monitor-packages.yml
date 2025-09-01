@@ -1,0 +1,25 @@
+name: OpenJS Security Monitor
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * 0'
+
+jobs:
+  monitor:
+    name: Monitor OpenJS Packages
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      
+      - name: Run monitor
+        run: node monitor.js
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
