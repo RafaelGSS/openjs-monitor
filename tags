@@ -3,37 +3,42 @@
 !_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
-!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CHECKS	lib/checks/index.js	/^const CHECKS = [$/;"	A
 REPOSITORIES	monitor.js	/^const REPOSITORIES = [$/;"	A
-bestPractices	monitor.js	/^        bestPractices: bestPracticesResult,$/;"	P
-calculateChecksum	monitor.js	/^function calculateChecksum(content) {$/;"	F
-changed	monitor.js	/^        changed: false,$/;"	P
-changed	monitor.js	/^      changed: false,$/;"	P
-changed	monitor.js	/^      changed: hasChanged,$/;"	P
-checkGitHubSecurityPolicy	monitor.js	/^async function checkGitHubSecurityPolicy(repo) {$/;"	F
-checkSecurityBestPractices	monitor.js	/^async function checkSecurityBestPractices(repo) {$/;"	F
-data	monitor.js	/^      let data = '';$/;"	V
-downloads	monitor.js	/^            downloads: 0,$/;"	P
-downloads	monitor.js	/^          downloads: 0,$/;"	P
-downloads	monitor.js	/^        downloads: 0,$/;"	P
-ensureDirectoriesExist	monitor.js	/^async function ensureDirectoriesExist() {$/;"	F
-getNpmDownloadCount	monitor.js	/^async function getNpmDownloadCount(packageName) {$/;"	F
-getPreviousChecksum	monitor.js	/^async function getPreviousChecksum(owner, repo, filePath) {$/;"	F
-getRawFileContent	monitor.js	/^async function getRawFileContent(owner, repo, filePath, branch) {$/;"	F
-hasSecurityFile	monitor.js	/^        hasSecurityFile: false,$/;"	P
-hasSecurityFile	monitor.js	/^      hasSecurityFile: false,$/;"	P
-hasSecurityFile	monitor.js	/^      hasSecurityFile: true,$/;"	P
-hasSecurityFile	monitor.js	/^    hasSecurityFile: false,$/;"	P
-hasSecurityFile	monitor.js	/^async function hasSecurityFile(repo) {$/;"	F
-headers	monitor.js	/^    headers: {$/;"	P
+calculateChecksum	lib/checks/securitymd_check.js	/^function calculateChecksum(content) {$/;"	F
+check	lib/checks/securitymd_check.js	/^async function check(repo) {$/;"	F
+check	lib/security_practices.js	/^async function check(repo) {$/;"	F
+checkCodeScanningEnabled	lib/checks/code_scanning.js	/^async function checkCodeScanningEnabled(repo) {$/;"	F
+checkCodeScanningEnabled	lib/security_practices.js	/^async function checkCodeScanningEnabled(repo) {$/;"	F
+checkDependabotEnabled	lib/checks/dependabot.js	/^async function checkDependabotEnabled(repo) {$/;"	F
+checkDependabotEnabled	lib/security_practices.js	/^async function checkDependabotEnabled(repo) {$/;"	F
+checkGitHubSecurityPolicy	lib/checks/security_policy.js	/^async function checkGitHubSecurityPolicy(repo) {$/;"	F
+checkGitHubSecurityPolicy	lib/security_practices.js	/^async function checkGitHubSecurityPolicy(repo) {$/;"	F
+checkSecurityAdvisories	lib/checks/security_advisories.js	/^async function checkSecurityAdvisories(repo) {$/;"	F
+checkSecurityAdvisories	lib/security_practices.js	/^async function checkSecurityAdvisories(repo) {$/;"	F
+data	lib/checks/security_advisories.js	/^      let data = '';$/;"	V
+data	lib/checks/securitymd_check.js	/^      let data = '';$/;"	V
+ensureDirectoriesExist	monitor.js	/^function ensureDirectoriesExist() {$/;"	F
+exports	cache.js	/^module.exports = {$/;"	P
+exports	lib/checks/index.js	/^module.exports = {$/;"	P
+exports	lib/checks/securitymd_check.js	/^module.exports = {$/;"	P
+exports	lib/security_practices.js	/^module.exports = {$/;"	P
+getPreviousChecksum	lib/checks/securitymd_check.js	/^async function getPreviousChecksum(owner, repo, filePath) {$/;"	F
+getRawFileContent	lib/checks/securitymd_check.js	/^async function getRawFileContent(owner, repo, filePath, branch) {$/;"	F
+hasSecurityFile	lib/checks/securitymd_check.js	/^async function hasSecurityFile(repo) {$/;"	F
+headers	lib/checks/code_scanning.js	/^    headers: {$/;"	P
+headers	lib/checks/dependabot.js	/^    headers: {$/;"	P
+headers	lib/checks/security_advisories.js	/^    headers: {$/;"	P
+headers	lib/checks/security_policy.js	/^    headers: {$/;"	P
+headers	lib/security_practices.js	/^    headers: {$/;"	P
 main	monitor.js	/^async function main() {$/;"	F
-monitorSecurityFile	monitor.js	/^async function monitorSecurityFile(repo) {$/;"	F
-npmStats	monitor.js	/^        npmStats: downloadStats$/;"	P
-options	monitor.js	/^  const options = {$/;"	O
-package	monitor.js	/^            package: actualPackage$/;"	P
-results	monitor.js	/^    const results = [];$/;"	A
-results	monitor.js	/^  const results = {$/;"	O
-saveChecksum	monitor.js	/^async function saveChecksum(owner, repo, filePath, checksum) {$/;"	F
-saveToCache	monitor.js	/^async function saveToCache(owner, repo, filePath, content) {$/;"	F
-securityPolicyInGitHub	monitor.js	/^    securityPolicyInGitHub: false,$/;"	P
-securityReport	monitor.js	/^    securityReport: {}$/;"	P
+options	lib/checks/code_scanning.js	/^  const options = {$/;"	O
+options	lib/checks/dependabot.js	/^  const options = {$/;"	O
+options	lib/checks/security_advisories.js	/^  const options = {$/;"	O
+options	lib/checks/security_policy.js	/^  const options = {$/;"	O
+options	lib/security_practices.js	/^  const options = {$/;"	O
+req	lib/checks/code_scanning.js	/^    const req = https.request(url, options, (res) => {$/;"	F
+req	lib/checks/dependabot.js	/^    const req = https.request(url, options, (res) => {$/;"	F
+saveChecksum	lib/checks/securitymd_check.js	/^async function saveChecksum(owner, repo, filePath, checksum) {$/;"	F
+saveToCache	lib/checks/securitymd_check.js	/^async function saveToCache(owner, repo, filePath, content) {$/;"	F

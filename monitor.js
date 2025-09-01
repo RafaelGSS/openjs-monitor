@@ -2,8 +2,7 @@
 
 'use strict';
 
-const { 
-  runAll,
+const {
   CHECKS
 } = require('./lib/checks');
 const {
@@ -12,9 +11,9 @@ const {
 } = require('./cache');
 const fs = require('node:fs')
 
-async function ensureDirectoriesExist() {
-  await fs.promises.mkdir(CACHE_DIR, { recursive: true });
-  await fs.promises.mkdir(CHECKSUM_DIR, { recursive: true });
+function ensureDirectoriesExist() {
+  fs.mkdirSync(CACHE_DIR, { recursive: true });
+  fs.mkdirSync(CHECKSUM_DIR, { recursive: true });
 }
 
 const REPOSITORIES = [
@@ -44,20 +43,18 @@ const REPOSITORIES = [
   }
 ];
 
-const checks = CHECKS;
-
 /**
  * Run the monitoring process for all repositories
  */
 async function main() {
   try {
     console.log(`OpenJS Security Monitor Starting...`);
-    
-    await ensureDirectoriesExist();
-    
+
+    ensureDirectoriesExist();
+
     for (const repo of REPOSITORIES) {
       console.log(`\nProcessing ${repo.name}...`);
-      for (const check of checks) {
+      for (const check of CHECKS) {
         await check(repo);
       }
     }
@@ -67,5 +64,4 @@ async function main() {
   }
 }
 
-// Run the script
 main();
