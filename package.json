@@ -4,7 +4,7 @@
   "description": "Monitors security aspects of top OpenJS npm packages",
   "main": "monitor.js",
   "scripts": {
-    "start": "node monitor.js"
+    "start": "node --env-file-if-exists=.env monitor.js"
   },
   "author": "Rafael Gonzaga <rafael.nunu@hotmail.com>",
   "license": "MIT"
